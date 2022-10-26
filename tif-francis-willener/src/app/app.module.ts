@@ -11,6 +11,9 @@ import { AboutComponent } from './components/about/about.component';
 import { AbilityComponent } from './components/ability/ability.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProyectComponent } from './components/proyect/proyect.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { SkillsComponent } from './components/skills/skills.component';
     BannerComponent,
     AboutComponent,
     AbilityComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProyectComponent,
+    FooterComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+.row {
+    height: 150px;
+    background-color: rgb(238, 119, 22);
+}
+
+.row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+}
