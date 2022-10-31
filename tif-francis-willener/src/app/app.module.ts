@@ -14,6 +14,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectComponent } from './components/proyect/proyect.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SigninComponent } from './components/signin/signin.component';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SigninComponent } from './components/signin/signin.component';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
