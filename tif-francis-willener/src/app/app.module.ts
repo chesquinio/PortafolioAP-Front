@@ -19,6 +19,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component'
 import { FormsModule } from '@angular/forms';
 import { ExpComponent } from './components/exp/exp.component';
+import { NewExperienciaComponent } from './components/exp/new-experiencia.component';
+import { EditExperienciaComponent } from './components/exp/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ExpComponent } from './components/exp/exp.component';
     SigninComponent,
     HomeComponent,
     LoginComponent,
-    ExpComponent
+    ExpComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,

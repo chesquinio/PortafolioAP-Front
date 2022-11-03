@@ -3,25 +3,20 @@
     <h2 class="row-h2">Experiencia Laboral</h2>
     <div class="col-md-10">
       <ul class="row-ul">
-        <li>
-          <h4>Experiencia 1</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            numquam in dolore saepe dicta inventore id praesentium dolorum nihil
-            quia cum quisquam ad non suscipit nisi, dolores sint consequatur.
-            Iusto.
-          </p>
-        </li>
-        <li>
-          <h4>Experiencia 2</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            perferendis ut commodi repellendus nulla delectus quos labore
-            voluptatem maxime ab sequi modi, soluta autem dolore aspernatur
-            repudiandae numquam, molestias saepe.
-          </p>
+        <li *ngFor="let Experiencia of expe">
+          <h4>{{Experiencia.nombreE}}</h4>
+          <p>{{Experiencia.descripcionE}}</p>
+          <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}" href=""><i class='bx bx-pencil'></i> Editar</button>
+          <button *ngIf="isLogged" class="btn btn-light"(click)="delete(Experiencia.id)" href=""><i class='bx bx-trash'></i> Borrar</button>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <button type="button" class="btn btn-light" routerLink="/nuevaexp" *ngIf="isLogged">
+        Nueva Experiencia
+      </button>
     </div>
   </div>
 </div>
