@@ -24,7 +24,7 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.form a {
+.form button {
   display: block;
   text-transform: uppercase;
   outline: 0;
@@ -38,8 +38,8 @@
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form a:hover,
-.form a:active,
-.form a:focus {
+.form button:hover,
+.form button:active,
+.form button:focus {
   background: #43a047;
 }

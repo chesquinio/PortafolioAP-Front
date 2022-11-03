@@ -1,5 +1,8 @@
 <div class="contenedor">
-    <a href="/login" class="btn btn-primary btn-light m-4">
+    <a *ngIf="!isLogged" href="/login" class="btn btn-primary btn-light m-4">
         SignIn
+    </a>
+    <a (click)="onLogOut()" *ngIf="isLogged" href="/login" class="btn btn-primary btn-light m-4">
+        SignOut
     </a>
 </div>
