@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { ExpComponent } from './components/exp/exp.component';
 import { NewExperienciaComponent } from './components/exp/new-experiencia.component';
 import { EditExperienciaComponent } from './components/exp/edit-experiencia.component';
+import { NewEducacionComponent } from './components/ability/new-educacion.component';
+import { EditEducacionComponent } from './components/ability/edit-educacion.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { EditExperienciaComponent } from './components/exp/edit-experiencia.comp
     LoginComponent,
     ExpComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent
   ],
   imports: [
     BrowserModule,

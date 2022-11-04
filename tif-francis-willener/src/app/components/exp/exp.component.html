@@ -4,17 +4,36 @@
     <div class="col-md-10">
       <ul class="row-ul">
         <li *ngFor="let Experiencia of expe">
-          <h4>{{Experiencia.nombreE}}</h4>
-          <p>{{Experiencia.descripcionE}}</p>
-          <button *ngIf="isLogged" class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}" href=""><i class='bx bx-pencil'></i> Editar</button>
-          <button *ngIf="isLogged" class="btn btn-light"(click)="delete(Experiencia.id)" href=""><i class='bx bx-trash'></i> Borrar</button>
+          <h4>{{ Experiencia.nombreE }}</h4>
+          <p>{{ Experiencia.descripcionE }}</p>
+          <button
+            *ngIf="isLogged"
+            class="btn btn-light"
+            routerLink="/editexp/{{ Experiencia.id }}"
+            href=""
+          >
+            <i class="bx bx-pencil"></i> Editar
+          </button>
+          <button
+            *ngIf="isLogged"
+            class="btn btn-light"
+            (click)="delete(Experiencia.id)"
+            href=""
+          >
+            <i class="bx bx-trash"></i> Borrar
+          </button>
         </li>
       </ul>
     </div>
   </div>
   <div class="row">
     <div class="col-md-2">
-      <button type="button" class="btn btn-light" routerLink="/nuevaexp" *ngIf="isLogged">
+      <button
+        type="button"
+        class="btn btn-light"
+        routerLink="/nuevaexp"
+        *ngIf="isLogged"
+      >
         Nueva Experiencia
       </button>
     </div>

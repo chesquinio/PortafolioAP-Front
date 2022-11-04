@@ -1,19 +1,41 @@
 <div class="container">
-    <div class="row">
-        <h2 class="row-h2">Estudios</h2>
-        <div class="col-md-10">
-            <ul class="row-ul">
-                <li>
-                    <h4>Estudios Secundarios</h4>
-                    <p>Escuela <b>Nuestra Señora de la Misericorsia</b> en la modalidad <b>Economia</b></p>
-                    <p>2015 - 2020</p>
-                </li>
-                <li>
-                    <h4>Estudios Universitarios</h4>
-                    <p>Cursando <b>Ing. en Computacion</b> en la <b>Universidad Nacional de Rafaela</b> ( U.N.Raf. )</p>
-                    <p>2021 - Presente</p>
-                </li>
-            </ul>
-        </div>
+  <div class="row">
+    <h2 class="row-h2">Estudios</h2>
+    <div class="col-md-10">
+      <ul class="row-ul">
+        <li *ngFor="let Educacion of educacion">
+          <h4>{{ Educacion.nombreEdu }}</h4>
+          <p>{{ Educacion.descripcionEdu }}</p>
+          <button
+            *ngIf="isLogged"
+            class="btn btn-light"
+            routerLink="/editedu/{{ Educacion.id }}"
+            href=""
+          >
+            <i class="bx bx-pencil"></i> Editar
+          </button>
+          <button
+            *ngIf="isLogged"
+            class="btn btn-light"
+            (click)="delete(Educacion.id)"
+            href=""
+          >
+            <i class="bx bx-trash"></i> Borrar
+          </button>
+        </li>
+      </ul>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <button
+        type="button"
+        class="btn btn-light"
+        routerLink="/nuevaedu"
+        *ngIf="isLogged"
+      >
+        Nueva Educacion
+      </button>
+    </div>
+  </div>
 </div>
