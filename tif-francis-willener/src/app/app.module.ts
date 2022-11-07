@@ -10,7 +10,6 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { AbilityComponent } from './components/ability/ability.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectComponent } from './components/proyect/proyect.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SigninComponent } from './components/signin/signin.component';
@@ -23,6 +22,9 @@ import { NewExperienciaComponent } from './components/exp/new-experiencia.compon
 import { EditExperienciaComponent } from './components/exp/edit-experiencia.component';
 import { NewEducacionComponent } from './components/ability/new-educacion.component';
 import { EditEducacionComponent } from './components/ability/edit-educacion.component';
+import { HysComponent } from './components/hys/hys.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,6 @@ import { EditEducacionComponent } from './components/ability/edit-educacion.comp
     BannerComponent,
     AboutComponent,
     AbilityComponent,
-    SkillsComponent,
     ProyectComponent,
     FooterComponent,
     SigninComponent,
@@ -43,7 +44,10 @@ import { EditEducacionComponent } from './components/ability/edit-educacion.comp
     NewExperienciaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
-    EditEducacionComponent
+    EditEducacionComponent,
+    HysComponent,
+    EditSkillComponent,
+    NewSkillComponent
   ],
   imports: [
     BrowserModule,
