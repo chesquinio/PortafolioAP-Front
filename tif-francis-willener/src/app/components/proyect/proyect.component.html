@@ -1,23 +1,41 @@
 <div class="container">
   <h2 class="container-h2">Proyectos</h2>
   <div class="row">
-    <div class="col-md-6 p-5">
-      <h4 class="pb-2">Proyecto 1</h4>
+    <div class="col-md-6 p-5 container-div" *ngFor="let Proyecto of proyecto">
+      <h4 class="pb-2">{{ Proyecto.titulo }}</h4>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab
-        quae est voluptatibus earum blanditiis? Eligendi porro dolore corporis,
-        repudiandae dolorum quaerat rem tempore minima fugit dolorem ducimus
-        sunt quas?
+        {{ Proyecto.descripcion }}
       </p>
+      <div>
+        <button
+          *ngIf="isLogged"
+          class="btn btn-light"
+          routerLink="/editproyect/{{ Proyecto.id }}"
+          href=""
+        >
+          <i class="bx bx-pencil"></i> Editar
+        </button>
+        <button
+          *ngIf="isLogged"
+          class="btn btn-light"
+          (click)="delete(Proyecto.id)"
+          href=""
+        >
+          <i class="bx bx-trash"></i> Borrar
+        </button>
+      </div>
     </div>
-    <div class="col-md-6 p-5">
-        <h4 class="pb-2">Proyecto 2</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab
-            quae est voluptatibus earum blanditiis? Eligendi porro dolore corporis,
-            repudiandae dolorum quaerat rem tempore minima fugit dolorem ducimus
-            sunt quas?
-        </p>
+  </div>
+  <div class="row">
+    <div class="col-md-12 boton">
+      <button
+        type="button"
+        class="btn btn-light"
+        routerLink="/nuevoproyect"
+        *ngIf="isLogged"
+      >
+        Nuevo Proyecto
+      </button>
     </div>
   </div>
 </div>
