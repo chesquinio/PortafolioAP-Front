@@ -8,5 +8,6 @@ export const environment = {
     authDomain: 'franciswillener-ap.firebaseapp.com',
     messagingSenderId: '408168053280',
   },
-  production: true
+  production: true,
+  URL: 'https://portafolio-app-chesquinio.koyeb.app/'
 };

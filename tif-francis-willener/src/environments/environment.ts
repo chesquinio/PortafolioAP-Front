@@ -12,9 +12,8 @@ export const environment = {
     authDomain: 'franciswillener-ap.firebaseapp.com',
     messagingSenderId: '408168053280',
   },
-  production: false,
-  URL: 'http://localhost:8080/',
-  //URL: ''
+  production: true,
+  URL: 'http://localhost:8080/'
 };
 
 /*
