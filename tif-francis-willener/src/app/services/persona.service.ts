@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 })
 export class PersonaService {
 
-  URL = environment.URL + 'personas/';
+  URL = environment.URL + 'persona/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,7 +21,7 @@ export class PersonaService {
   }
 
   public save(persona: persona): Observable<any> {
-    return this.httpClient.post<any>(this.URL + 'create', persona);
+    return this.httpClient.post<any>(this.URL + 'crear', persona);
   }
 
   public update(id: number, persona: persona):Observable<any> {
