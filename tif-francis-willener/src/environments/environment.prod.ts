@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '408168053280',
   },
   production: true,
-  URL: 'http://localhost:8080/'
+  URL: 'https://portafolio-app-chesquinio.koyeb.app/'
 };
